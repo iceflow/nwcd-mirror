@@ -20,6 +20,9 @@
 2. 高可用保障: AWS中国宁夏区域多可用区域部署
 3. 数据有效性：按需获取最新的公开容器镜像，并缓存30天
 4. 访问限制: 仅限AWS中国区域访问使用
+5. 监控指标
+   - Application Level: DAU/PV/Download Ranking
+   - Infra Level: NLB / TG / EC2 / EBS storage usage metrics 
 
 ## Plan
 * [X] 域名证书获取
@@ -28,6 +31,8 @@
 * [X] 增加quay.io镜像+测试
 * [ ] NLB 2 AZ 支持
 * [ ] AWS中国区域访问限制配置(结合ip-range notification+lambda+update subnet Network Acl)
+* [ ] 增加运营监控指标和分析界面
+* [ ] 开放公开访问权限, Cloudfront 支持
 
 ## FAQ
 Q1: 为什么要使用这些镜像?<br>
