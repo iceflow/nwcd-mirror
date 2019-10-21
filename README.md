@@ -15,9 +15,9 @@
 
 ## Plan
 * [X] 域名证书获取
-* [ ] 增加docker.io镜像+测试
-* [ ] 增加gcr.io镜像+测试
-* [ ] 增加quay.io镜像+测试
+* [X] 增加docker.io镜像+测试
+* [X] 增加gcr.io镜像+测试
+* [X] 增加quay.io镜像+测试
 * [ ] NLB 2 AZ 支持
 * [ ] AWS中国区域访问限制配置(结合ip-range notification+lambda+update subnet Network Acl)
 
@@ -33,8 +33,8 @@ A3: Docker-Hub 镜像修改
 - Linux版本
     ```Bash
     sudo mkdir -p /etc/docker 
-    sudo tee /etc/docker/daemon.json <<-'EOF'
-    { "registry-mirrors": ["https://dockhub.mirror.nwcdcdn.cn"] } 
+    sudo tee /etc/docker/daemon.json << EOF
+    { "registry-mirrors": ["https://dockerhub.mirror.nwcdcdn.cn"] } 
     EOF 
     sudo systemctl daemon-reload 
     sudo systemctl restart docker
