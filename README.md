@@ -3,12 +3,20 @@
 1. 支持容器相关公开镜像仓库加速
 2. 其他
 
+## 免责申明
+现在在测试阶段，仅限制测试使用。有相关问题，请提交issue，我们会及时处理。
 
 ## Release Notes
 1. 提供以下镜像加速地址<br>
-   - docker-hub加速镜像: https://dockerhub.mirror.nwcdcdn.cn
-   - gcr.io加速镜像: https://gcr.mirror.nwcdcdn.cn
-   - quay.io加速镜像: https://quay.mirror.nwcdcdn.cn
+   - docker-hub加速镜像: 
+     - HTTP支持: http://dockerhub.mirror.nwcdcdn.cn
+     - HTTPS支持: https://dockerhub.mirror.nwcdcdn.cn
+   - gcr.io加速镜像: 
+     - HTTP支持: http://gcr.mirror.nwcdcdn.cn
+     - HTTPS支持: https://gcr.mirror.nwcdcdn.cn
+   - quay.io加速镜像: 
+     - HTTP支持: http://quay.mirror.nwcdcdn.cn
+     - HTTPS支持: https://quay.mirror.nwcdcdn.cn
 2. 高可用保障: AWS中国宁夏区域多可用区域部署
 3. 数据有效性：按需获取最新的公开容器镜像，并缓存30天
 4. 访问限制: 仅限AWS中国区域访问使用
