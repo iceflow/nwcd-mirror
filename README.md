@@ -61,6 +61,6 @@ Q5: k8s.gcr.io 下的内容怎么加速?<br>
 A5: k8s.gcr.io 内容重定向到 gcr.io/google-containers, 可以使用 gcr.mirror.nwcdcdn.cn/google-containers加速，以下内容都一致
 ```Bash
 k8s.gcr.io/pause-amd64:3.1
-gcr.io/google_containers/pause-amd64:3.1
-gcr.mirror.nwcdcdn.cn/google_containers/pause-amd64:3.1
+gcr.io/google-containers/pause-amd64:3.1
+gcr.mirror.nwcdcdn.cn/google-containers/pause-amd64:3.1
 ```
