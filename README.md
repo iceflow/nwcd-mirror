@@ -4,7 +4,8 @@
 2. 其他
 
 ## 免责申明
-现在在测试阶段，仅限制测试使用。有相关问题，请提交issue，我们会及时处理。
+建议测试过程中使用此方案，生产环境使用请自行考虑评估。
+当您使用碰到问题或者对方案需要进一步的沟通和建议，请提交项目[Issues](https://github.com/nwcdlabs/nwcd-mirror/issues).
 
 ## Release Notes
 1. 提供以下镜像加速地址<br>
@@ -25,7 +26,7 @@
    - Infra Level: NLB / TG / EC2 / EBS storage usage metrics 
 
 ## Plan
-* [X] 域名证书获取
+* [X] 测试域名证书获取
 * [X] 增加docker.io镜像+测试
 * [X] 增加gcr.io镜像+测试
 * [X] 增加quay.io镜像+测试
@@ -55,3 +56,11 @@ A3: Docker-Hub 镜像修改
 
 Q4: 我需要付费或者注册会员吗?<br>
 A4: 此服务不收费，也无需注册会员认证。
+
+Q5: k8s.gcr.io 下的内容怎么加速?<br>
+A5: k8s.gcr.io 内容重定向到 gcr.io/google-containers, 可以使用 gcr.mirror.nwcdcdn.cn/google-containers加速，以下内容都一致
+```Bash
+k8s.gcr.io/pause-amd64:3.1
+gcr.io/google_containers/pause-amd64:3.1
+gcr.mirror.nwcdcdn.cn/google_containers/pause-amd64:3.1
+```
