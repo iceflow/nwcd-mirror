@@ -5,7 +5,7 @@
 
 ## 免责申明
 建议测试过程中使用此方案，生产环境使用请自行考虑评估。
-当您使用碰到问题或者对方案需要进一步的沟通和建议，请提交项目[Issues](https://github.com/nwcdlabs/nwcd-mirror/issues).
+当您使用碰到问题或者对方案需要进一步的沟通和建议，请提交项目[Issues](https://github.com/iceflow/nwcd-mirror/issues).
 
 ## Release Notes
 1. 提供以下镜像加速地址<br>
